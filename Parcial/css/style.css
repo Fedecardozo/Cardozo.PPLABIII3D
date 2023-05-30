@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+}
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.contenedor-imagen img{
+
+    height: 80px;
+    width: 80px;
+}
+nav ul{
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el espaciado horizontal entre los elementos li */
+    color: aqua;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px; /* Ajusta el espaciado vertical entre los elementos li */
+    }
+}
+h2, h1, h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+.fondo-form{
+
+    background-image: url(../img/fondo.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el formulario */
+    background-position: center; /* Centra la imagen en el formulario */
+    padding: 20px;
+    color: #ffffff;
+    
+}
+fieldset{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+}
+footer{
+    background-color: rgba(153, 50, 204, 0.766);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+}
+footer p{
+    color: aquamarine;
+}
+
+form input[type='text'],input[type='range']{
+    background-color: rgba(193, 198, 203, 0.66);
+    border-radius: 5px;
+    border: 2px solid rgba(193, 198, 203, 0.74);
+    /* display: block; */
+    width: 100%;
+    /* margin-top: 7px; */
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+form div{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+form input[type='submit']{
+
+    /* background-color: green; */
+    color: black;
+    background-color: crimson;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 0px;
+    width: 103%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    /* align-self: center;
+    margin-top: 10px; */
+}
+
+form input[type='submit']:hover
+{
+    opacity: 0.850;
+    /* background-color: rgba(0, 128, 0, 0.850); */
+    cursor: pointer;
+    color: snow;
+}
+.contenedorIcono{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.iconoRdo{
+
+    height: 70px;
+    width: 90px;
+
+}

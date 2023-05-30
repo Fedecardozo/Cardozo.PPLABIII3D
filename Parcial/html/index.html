@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer type="module"></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="contenedor-imagen">
+            <img src="../img/escudo.png" alt="capitan">
+          </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Personajes</li>
+                <li>Blog</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fondo-form">
+            <h2>Crud Heroes</h2>
+            <fieldset>
+                <h3>Información del SuperHeroe</h3>
+
+                <form>
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" required>
+
+                    <label for="txtAlias">Alias</label>
+                    <input type="text" id="txtAlias" name="txtAlias" placeholder="ingrese alter-ego" required>
+
+                    <div class="contendorRadios">
+                        <label>Editorial</label>
+                        <div class="contenedorIcono">
+                            <img src="../img/marvel2.png" alt="marvel" class="iconoRdo">
+                            <input type="radio" name="rdoEditorial" id="rdoMarvel" value="marvel">
+                        </div>
+                        <div class="contenedorIcono">
+                            <img src="../img/Superheroes-DC.png" alt="dc" class="iconoRdo">
+                            <input type="radio" name="rdoEditorial" id="rdoDc" value="dc">
+                        </div>
+                    </div>
+
+                    <label for="rangeFuerza">Fuerza</label>
+                    <input type="range" name="rangeFuerza" id="rangeFuerza">
+
+                    <label for="selectArma">Armadura</label>
+                    <select name="selectArma" id="selectArma"></select>
+
+                    <input type="submit" value="Guardar" >
+
+                </form>
+
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Personajes</li>
+                <li>Blog</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <p>Laboratorio III - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

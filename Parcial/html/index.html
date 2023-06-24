@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../js/script.js" defer type="module"></script>
 
 </head>
 <body>
     
     <header>
-        <div class="contenedor-imagen">
-            <img src="../img/escudo.png" alt="capitan">
-          </div>
+        <div ><img src="../img/escudo.png" alt="Escudo capitan"></div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Personajes</li>
-                <li>Blog</li>
-                <li>Contacto</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h2>Crud Heroes</h2>
         <section class="fondo-form">
-            <h2>Crud Heroes</h2>
             <fieldset>
-                <h3>Información del SuperHeroe</h3>
-
                 <form>
+                    <h3>Información del SuperHeroe</h3>
                     <label for="txtNombre">Nombre</label>
                     <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" required>
 
                     <label for="txtAlias">Alias</label>
-                    <input type="text" id="txtAlias" name="txtAlias" placeholder="ingrese alter-ego" required>
+                    <input type="text" id="txtAlias" name="txtAlias" placeholder="Ingrese alter-ego" required>
 
                     <div class="contendorRadios">
                         <label>Editorial</label>
                         <div class="contenedorIcono">
                             <img src="../img/marvel2.png" alt="marvel" class="iconoRdo">
-                            <input type="radio" name="rdoEditorial" id="rdoMarvel" value="marvel">
-                        </div>
-                        <div class="contenedorIcono">
+                            <input type="radio" name="rdoEditorial" id="rdoMarvel" value="marvel" checked>
+
                             <img src="../img/Superheroes-DC.png" alt="dc" class="iconoRdo">
                             <input type="radio" name="rdoEditorial" id="rdoDc" value="dc">
                         </div>
@@ -56,7 +53,10 @@
                     <label for="selectArma">Armadura</label>
                     <select name="selectArma" id="selectArma"></select>
 
-                    <input type="submit" value="Guardar" >
+                    <button type="submit">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Guardar
+                    </button>
 
                 </form>
 
@@ -67,13 +67,16 @@
     <footer>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Personajes</li>
-                <li>Blog</li>
-                <li>Contacto</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <p>Laboratorio III - Todos los derechos reservados</p>
+        <p>
+            Laboratorio III - Todos los derechos reservados
+            <i class="fa-regular fa-copyright"></i>
+        </p>
     </footer>
 </body>
 </html>

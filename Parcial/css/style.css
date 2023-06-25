@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media screen and (max-width: 800px)
+{
+    header>nav>ul>li,footer>nav>ul>li{
+
+        display: block;
+
+    }
+}
+
 header{
 
     background-image: url("../img/header.jpg");
@@ -165,7 +174,6 @@ footer{
 footer>p{
     color: antiquewhite;
 }
-
 
 
 
